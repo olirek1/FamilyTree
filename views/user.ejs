@@ -1,0 +1,28 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="user-div">
+            <div class="edit-button">
+                <a href="/update-user/<%= users._id%>" class="btn border-shadow update">
+                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                </a>
+            </div>
+            <div class="user-div-details"><%= users.name %></div>
+            
+            <div class="delete-button"></div>
+                <a class="btn border-shadow delete" data-id=<%= users._id%> >
+                    <span class="text-gradient"><i class="fas fa-plus"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
